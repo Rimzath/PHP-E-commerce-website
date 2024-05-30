@@ -8,8 +8,12 @@
 </head>
 <body>
     <div class="signup-container">
-        <form class="signup-form">
+        <form class="signup-form" action="signup.php" method="post">
             <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" id="name" name="name" required placeholder="enter your name here">
+            </div>
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required placeholder="enter your username here">
@@ -29,5 +33,37 @@
             <button type="submit">Sign Up</button>
         </form>
     </div>
+    <?php
+        include 'conn.php';
+        
+        if(!isset($_POST['password']) || !isset($_POST['re-password'])){
+            return;
+        }
+
+        if ($_POST['password'] !== $_POST['re-password']){
+            echo "<script>alert('Password Mismatch');</script>";
+            echo "<script>location.href='signup.php'</script>";
+            retun;
+        }
+        
+        if(!isset($_POST['username']) || !isset($_POST['password'])){
+            return;
+        }
+        $name = $_POST['name'];
+        $username = $_POST['username'];
+        
+$email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $sql = "INSERT INTO signup (name, username, password)
+        VALUES ('$name', '$username', '$password')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "<script>alert('New Record created successfully');</script>";
+            echo "<script>location.href='home.php'</script>";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    ?>
 </body>
 </html>
