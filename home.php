@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Welcome to home page</h1>
+    <a link href="login.php">login</a>
+    <br>
     <a link href="signup.php">signup</a>
 </body>
 </html>

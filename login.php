@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form">
+        <form class="login-form" action="server.php" method="post">
             <h2>Login</h2>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="enter your email here">
+                <label for="name">Name</label>
+                <input type="name" id="name" name="name" required placeholder="enter your name here">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
