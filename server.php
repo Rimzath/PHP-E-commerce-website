@@ -29,7 +29,7 @@
         // if username and password didn't match
         if($row == null){
             echo "<script>alert('Incorrect Details');</script>";
-            echo "<script>location.href='products.php'</script>";
+            echo "<script>location.href='login.php'</script>";
             return;
         }
         // store user details in a session
@@ -38,10 +38,7 @@
         $_SESSION['usertype'] = $row['user_type'];
 
         // if checkbox checked save username and password in cookies
-        if(isset($_GET["check"])){
-            setCookie('username', $formUsername);
-            setCookie('password', $formPassword);
-        }
+        
 
         echo "<script>location.href='products.php'</script>";
         return;

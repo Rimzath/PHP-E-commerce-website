@@ -54,8 +54,8 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $sql = "INSERT INTO signup (name, username, password)
-        VALUES ('$name', '$username', '$password')";
+        $sql = "INSERT INTO signup (name, username, password , user_type)
+        VALUES ('$name', '$username', '$password' , 'customer')";
 
         if ($conn->query($sql) === TRUE) {
             echo "<script>alert('New Record created successfully');</script>";

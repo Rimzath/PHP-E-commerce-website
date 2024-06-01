@@ -19,6 +19,7 @@
                 <input type="password" id="password" name="password" required placeholder="enter your password here">
             </div>
             <button type="submit">Login</button>
+            <a href="signup.php">Signup</a>
         </form>
     </div>
 </body>
