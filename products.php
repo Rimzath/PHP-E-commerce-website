@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+include("menu.php");
+
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,9 +10,11 @@
     </head>
     <body>
     <h1>Welcome to Product Page</h1>
-    <a href="logout.php">Logout </a>
+
     <?php
-        session_start();
+
+    
+        
         if (isset($_SESSION["username"])) {
             include 'items.php';
         } else {
