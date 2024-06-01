@@ -15,7 +15,7 @@
         session_start();
         if (isset($_SESSION['username'])){
             // currently logged in 
-            echo "<a href='logout.php'>Logout</a>";
+            echo "<a href='profile.php'>Logout</a>";
         } else {
             // currently logged out
             echo "<a href='login.php'>Login</a>";   
