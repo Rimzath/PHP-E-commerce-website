@@ -11,7 +11,7 @@
     <?php
         session_start();
         if(isset($_SESSION['usertype']) && $_SESSION['usertype'] == "admin"){
-            echo "<a href='./admin'>Dashboard</a>";
+            echo "<a href='admin/index.php'>Dashboard</a>";
         }
     ?>
     <a href="help.php">Help</a>
