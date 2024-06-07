@@ -9,15 +9,16 @@ include("menu.php");
     <title>HOME PAGE</title>
     <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body style="background-image: url('photos/background.png');">
-    <p style="background-image: url('photos/background.png');">
+    
     
     <main>
         <section class="hero">
             <div class="hero-content">
                 <h1>Welcome to Our Electronics Store</h1>
                 <p>Your one-stop shop for the latest and greatest in electronics.</p>
-                <a href="#" class="cta-button">Shop Now</a>
+                <a href="products.php" class="cta-button">Shop Now</a>
             </div>
         </section>
         <section class="features">
