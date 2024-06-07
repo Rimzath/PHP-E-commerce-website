@@ -3,6 +3,133 @@
 <html>
     <head>
         <title>Products</title>
+        <style>
+            /* Reset some basic elements */
+            body, h1, h2, h3, h4, h5, h6, p, form, input, button, div, span {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Arial', sans-serif;
+            }
+
+            /* Body styling */
+            body {
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
+
+            /* Container for cards */
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            /* Card styling */
+            .card {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                width: 250px;
+                text-align: center;
+                transition: transform 0.2s ease-in-out;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+            /* Image styling */
+            .card img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            /* Text styling */
+            #item_name {
+                font-size: 1.2em;
+                color: #333;
+                margin: 10px 0;
+            }
+
+            #item_price {
+                font-size: 1em;
+                color: #666;
+            }
+
+            /* Button styling */
+            button {
+                background-color: #007BFF;
+                border: none;
+                color: white;
+                padding: 10px 15px;
+                margin: 10px 5px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+            /* Delete button styling */
+            .delete {
+                background-color: #dc3545;
+            }
+
+            .delete:hover {
+                background-color: #c82333;
+            }
+
+            /* Edit button styling */
+            .edit {
+                background-color: #ffc107;
+            }
+
+            .edit:hover {
+                background-color: #e0a800;
+            }
+
+            /* Search form styling */
+            form {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 200px;
+                margin-right: 10px;
+            }
+
+            input[type="submit"] {
+                padding: 10px 15px;
+                border: none;
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #218838;
+            }
+
+            /* Result text */
+            #result {
+                text-align: center;
+                font-size: 1.2em;
+                color: #666;
+            }
+
+        </style
     </head>
     <body >
         

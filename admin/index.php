@@ -4,33 +4,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="css/dashboard.css" >
   </head>
 <body>
 
   <div class="container">
-    <nav>
+    <nav class="menu-bar">
       <ul>
-        <li><a href="../home.php" class="logo">
+        <a href="../home.php" class="logo">
          
         <span class="nav-item">Laptoplk</span>
-        </a></li>
-        <li><a href="../home.php">
+        </a>  
+        <a href="../home.php">
           <i class="fas fa-home"></i>
           <span class="nav-item">Home</span>
-        </a></li>
-        <li><a href="../products.php">
+        </a>  
+        <a href="../products.php">
           <i class="fas fa-tasks"></i>
           <span class="nav-item">Products</span>
-        </a></li>
-        <li><a href="../help.php">
+        </a>  
+        <a href="../help.php">
           <i class="fas fa-question-circle"></i>
           <span class="nav-item" href="help.php">Help</span>
-        </a></li>
-        <li><a href="../logout.php" class="logout">
+        </a>  
+        <a href="../logout.php" class="logout">
           <i class="fas fa-sign-out-alt"></i>
           <span class="nav-item">Log out</span>
-        </a></li>
+        </a>  
       </ul>
     </nav>
 
